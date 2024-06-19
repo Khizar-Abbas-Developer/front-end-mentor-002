@@ -33,7 +33,7 @@ const QueryForm = () => {
         <>
             <div className="w-[100%] h-[100vh] md:w-[69%] lg:w-[70%] xl:w-[45%] md:h-[80vh] xl:h-[90vh] bg-white flex flex-col justify-center items-center gap-3 pl-4 rounded-xl">
                 <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
-                    <div className="w-full text-3xl py-3 font-[600] flex justify-center items-center sm:justify-center md:justify-center lg:justify-start">Contact Us</div>
+                    <div className="w-full text-3xl mt-12 py-3 font-[600] flex justify-center items-center sm:justify-center md:justify-center lg:justify-start">Contact Us</div>
                     <div className="flex flex-col sm:flex-row justify-evenly items-center gap-2">
                         <div className="flex flex-col gap-2">
                             <div className="">First Name <span className="text-red-600">*</span></div>
@@ -75,9 +75,9 @@ const QueryForm = () => {
                         </div>
                     </div>
                     {/*  */}
-                    <div className="flex justify-center sm:justify-start gap-2 items-center my-3 cursor-pointer">
+                    <div className="flex justify-center w-full sm:justify-start gap-2 items-center my-3 cursor-pointer">
                         <input type="checkbox" id="termsCheckbox" name="agreement" checked={data.agreement} onChange={handleInputChange} className="mr-2" />
-                        <label htmlFor="termsCheckbox" className="text-sm flex-shrink">I consent to being contacted by the team</label>
+                        <label htmlFor="termsCheckbox" className="text-sm flex-shrink w-[150px]">I consent to being contacted by the team</label>
                     </div>
                     {/*  */}
                     <div className="px-8 xl:w-[100%]">
